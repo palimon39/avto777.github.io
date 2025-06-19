@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>АвтоМаркет – Автомобили мечты</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-white text-gray-900 font-montserrat">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-extrabold text-blue-600 tracking-tight">🚗 АвтоМаркет</h1>
+      <nav class="space-x-6">
+        <a href="#cars" class="text-gray-700 font-medium hover:text-blue-600 transition">Авто</a>
+        <a href="#about" class="text-gray-700 font-medium hover:text-blue-600 transition">О нас</a>
+        <a href="#contact" class="text-gray-700 font-medium hover:text-blue-600 transition">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-28 text-center shadow-inner">
+    <div class="max-w-4xl mx-auto px-4 animate-fadeIn">
+      <h2 class="text-5xl sm:text-6xl font-extrabold mb-6 leading-tight drop-shadow-xl">Купите автомобиль своей мечты</h2>
+      <p class="text-xl sm:text-2xl mb-8 font-light text-white/90">Выбор, надёжность и стиль в одном месте</p>
+      <a href="#cars" class="inline-block bg-white text-blue-600 px-10 py-4 rounded-full font-semibold text-lg shadow-lg hover:bg-gray-100 transition">Смотреть авто</a>
+    </div>
+  </section>
+
+  <!-- Cars -->
+  <section id="cars" class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4">
+      <h3 class="text-4xl font-bold mb-14 text-center text-gray-800">Наши автомобили</h3>
+      <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-10">
+
+        <!-- Авто 1 -->
+        <div class="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-1 p-6 duration-300">
+          <img src="camry.jpg" alt="Toyota Camry" class="rounded-xl mb-4 w-full h-56 object-cover shadow-md">
+          <h4 class="text-2xl font-bold text-gray-800 mb-1">Toyota Camry</h4>
+          <p class="text-gray-600">2018, 2.5L, автомат</p>
+          <p class="text-blue-700 font-bold text-xl mt-3">1 500 000 ₽</p>
+        </div>
+
+        <!-- Авто 2 -->
+        <div class="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-1 p-6 duration-300">
+          <img src="volkswagen.jpg" alt="Volkswagen T3" class="rounded-xl mb-4 w-full h-56 object-cover shadow-md">
+          <h4 class="text-2xl font-bold text-gray-800 mb-1">Volkswagen T3</h4>
+          <p class="text-gray-600">1988, 6.0L, механика</p>
+          <p class="text-blue-700 font-bold text-xl mt-3">9 000 000 ₽</p>
+        </div>
+
+        <!-- Авто 3 -->
+        <div class="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-1 p-6 duration-300">
+          <img src="bmw.jpg" alt="BMW M5 F90" class="rounded-xl mb-4 w-full h-56 object-cover shadow-md">
+          <h4 class="text-2xl font-bold text-gray-800 mb-1">BMW M5 F90</h4>
+          <p class="text-gray-600">2020, 4.4L, полный привод</p>
+          <p class="text-blue-700 font-bold text-xl mt-3">9 100 000 ₽</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-white py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-4xl font-bold mb-6 text-gray-900">О нас</h3>
+      <p class="text-xl text-gray-700 leading-relaxed">
+        Мы — команда экспертов с более чем 10-летним стажем в продаже автомобилей. Предоставляем лучшие предложения, гарантии и заботимся о вашей уверенности на дороге.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-gradient-to-r from-blue-50 to-blue-100">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h3 class="text-4xl font-bold mb-6 text-blue-800">Связаться с нами</h3>
+      <p class="text-lg text-gray-700">Телефон: <strong>+375 (29) 729-24-73</strong></p>
+      <p class="text-lg text-gray-700">Email: <strong>info@avtomarket.ru</strong></p>
+      <a href="mailto:info@avtomarket.ru" class="inline-block mt-6 px-8 py-4 bg-blue-600 text-white rounded-xl shadow-lg hover:bg-blue-700 transition">Написать нам</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-12">
+    <div class="max-w-7xl mx-auto p-6 text-center text-gray-600">
+      &copy; 2025 АвтоМаркет. Все права защищены.
+    </div>
+  </footer>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
